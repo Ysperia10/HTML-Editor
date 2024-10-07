@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.separator.EditorController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Área de texto editable (simula un editor) -->
+    <TextArea fx:id="editorArea" promptText="Escribe tu HTML aquí..." prefHeight="200" prefWidth="400"/>
+
+    <!-- Botón para mostrar el contenido -->
+    <Button text="Mostrar Contenido" onAction="#mostrarContenido"/>
+
+    <!-- Etiqueta para mostrar el contenido del editor -->
+    <Label fx:id="outputLabel" text="Aquí se mostrará el contenido..."/>
+</VBox>
